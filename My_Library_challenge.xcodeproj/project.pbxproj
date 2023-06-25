@@ -8,25 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		329B6C152A473A8900A0F8A4 /* My_Library_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C142A473A8900A0F8A4 /* My_Library_challengeApp.swift */; };
-		329B6C172A473A8900A0F8A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C162A473A8900A0F8A4 /* ContentView.swift */; };
 		329B6C192A473A8A00A0F8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329B6C182A473A8A00A0F8A4 /* Assets.xcassets */; };
 		329B6C1C2A473A8A00A0F8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329B6C1B2A473A8A00A0F8A4 /* Preview Assets.xcassets */; };
-		329B6C282A473B4200A0F8A4 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 329B6C272A473B4200A0F8A4 /* Data.json */; };
+		329B6C282A473B4200A0F8A4 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 329B6C272A473B4200A0F8A4 /* data.json */; };
 		329B6C2A2A473EB200A0F8A4 /* LibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C292A473EB200A0F8A4 /* LibraryListView.swift */; };
 		329B6C2C2A47457100A0F8A4 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C2B2A47457100A0F8A4 /* Book.swift */; };
 		329B6C2E2A47460500A0F8A4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C2D2A47460500A0F8A4 /* DataService.swift */; };
+		329B6C302A475AD900A0F8A4 /* BookItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C2F2A475AD900A0F8A4 /* BookItemView.swift */; };
+		329B6C322A475DFD00A0F8A4 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C312A475DFD00A0F8A4 /* BookModel.swift */; };
+		329B6C342A47670400A0F8A4 /* LibraryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C332A47670400A0F8A4 /* LibraryTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		329B6C112A473A8900A0F8A4 /* My_Library_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_Library_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329B6C142A473A8900A0F8A4 /* My_Library_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Library_challengeApp.swift; sourceTree = "<group>"; };
-		329B6C162A473A8900A0F8A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		329B6C182A473A8A00A0F8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329B6C1B2A473A8A00A0F8A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		329B6C272A473B4200A0F8A4 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		329B6C272A473B4200A0F8A4 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		329B6C292A473EB200A0F8A4 /* LibraryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListView.swift; sourceTree = "<group>"; };
 		329B6C2B2A47457100A0F8A4 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		329B6C2D2A47460500A0F8A4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		329B6C2F2A475AD900A0F8A4 /* BookItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItemView.swift; sourceTree = "<group>"; };
+		329B6C312A475DFD00A0F8A4 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		329B6C332A47670400A0F8A4 /* LibraryTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,6 @@
 				329B6C232A473ACF00A0F8A4 /* Views */,
 				329B6C222A473AB000A0F8A4 /* Data */,
 				329B6C142A473A8900A0F8A4 /* My_Library_challengeApp.swift */,
-				329B6C162A473A8900A0F8A4 /* ContentView.swift */,
 				329B6C182A473A8A00A0F8A4 /* Assets.xcassets */,
 				329B6C1A2A473A8A00A0F8A4 /* Preview Content */,
 			);
@@ -83,7 +86,7 @@
 		329B6C222A473AB000A0F8A4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				329B6C272A473B4200A0F8A4 /* Data.json */,
+				329B6C272A473B4200A0F8A4 /* data.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -91,7 +94,9 @@
 		329B6C232A473ACF00A0F8A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				329B6C332A47670400A0F8A4 /* LibraryTabView.swift */,
 				329B6C292A473EB200A0F8A4 /* LibraryListView.swift */,
+				329B6C2F2A475AD900A0F8A4 /* BookItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 		329B6C242A473ADB00A0F8A4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				329B6C312A475DFD00A0F8A4 /* BookModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -179,7 +185,7 @@
 			files = (
 				329B6C1C2A473A8A00A0F8A4 /* Preview Assets.xcassets in Resources */,
 				329B6C192A473A8A00A0F8A4 /* Assets.xcassets in Resources */,
-				329B6C282A473B4200A0F8A4 /* Data.json in Resources */,
+				329B6C282A473B4200A0F8A4 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,10 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				329B6C2C2A47457100A0F8A4 /* Book.swift in Sources */,
-				329B6C172A473A8900A0F8A4 /* ContentView.swift in Sources */,
+				329B6C302A475AD900A0F8A4 /* BookItemView.swift in Sources */,
 				329B6C2A2A473EB200A0F8A4 /* LibraryListView.swift in Sources */,
 				329B6C152A473A8900A0F8A4 /* My_Library_challengeApp.swift in Sources */,
 				329B6C2E2A47460500A0F8A4 /* DataService.swift in Sources */,
+				329B6C322A475DFD00A0F8A4 /* BookModel.swift in Sources */,
+				329B6C342A47670400A0F8A4 /* LibraryTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ import Foundation
 
 class DataService {
     static func getLocalData() -> [Book]{
-        let pathString = Bundle.main.path(forResource: "Data", ofType: "json")
+        let pathString = Bundle.main.path(forResource: "data", ofType: "json")
         guard pathString != nil else{
             return [Book]()
         }
@@ -23,9 +23,9 @@ class DataService {
             do {
                 let booksData = try decoder.decode([Book].self, from: data)
                 
-                for b in booksData {
-                    b.id = UUID()
-                }
+                //for b in booksData {
+                   // b.id = UUID()
+               // }
                 return booksData
                 
             }catch {
