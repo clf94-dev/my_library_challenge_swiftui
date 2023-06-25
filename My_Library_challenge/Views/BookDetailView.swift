@@ -11,7 +11,7 @@ struct BookDetailView: View {
     @State var selectedRating = 2
     var book: Book
     var body: some View {
-        NavigationView {
+      
             VStack (alignment: .center){
                 Text(book.title)
                     .font(.largeTitle)
@@ -21,13 +21,13 @@ struct BookDetailView: View {
                     .font(.title2)
                     .padding()
                 
-                Image(book.image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 220)
-                // NavigationLink(destination: BookContentView(book: book.content), label: {
-                  //  Image(book.image)
-                //})
+                    
+                NavigationLink(destination: BookContentView(book: book), label: {
+                    Image(book.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 220)
+                })
                 Text("Mark for later!")
                     .bold()
                     .padding(.vertical, 10  )
@@ -50,7 +50,8 @@ struct BookDetailView: View {
                 
                 
             }
-        }
+            
+        
     }
 
 }

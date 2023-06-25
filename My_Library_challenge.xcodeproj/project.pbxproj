@@ -18,6 +18,7 @@
 		329B6C322A475DFD00A0F8A4 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C312A475DFD00A0F8A4 /* BookModel.swift */; };
 		329B6C342A47670400A0F8A4 /* LibraryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C332A47670400A0F8A4 /* LibraryTabView.swift */; };
 		329B6C362A48A7C300A0F8A4 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C352A48A7C300A0F8A4 /* BookDetailView.swift */; };
+		329B6C382A48B9D100A0F8A4 /* BookContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6C372A48B9D100A0F8A4 /* BookContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		329B6C312A475DFD00A0F8A4 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		329B6C332A47670400A0F8A4 /* LibraryTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTabView.swift; sourceTree = "<group>"; };
 		329B6C352A48A7C300A0F8A4 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		329B6C372A48B9D100A0F8A4 /* BookContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				329B6C292A473EB200A0F8A4 /* LibraryListView.swift */,
 				329B6C2F2A475AD900A0F8A4 /* BookItemView.swift */,
 				329B6C352A48A7C300A0F8A4 /* BookDetailView.swift */,
+				329B6C372A48B9D100A0F8A4 /* BookContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				329B6C152A473A8900A0F8A4 /* My_Library_challengeApp.swift in Sources */,
 				329B6C2E2A47460500A0F8A4 /* DataService.swift in Sources */,
 				329B6C322A475DFD00A0F8A4 /* BookModel.swift in Sources */,
+				329B6C382A48B9D100A0F8A4 /* BookContentView.swift in Sources */,
 				329B6C342A47670400A0F8A4 /* LibraryTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
