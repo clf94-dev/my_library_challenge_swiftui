@@ -9,6 +9,8 @@ import SwiftUI
 
 struct BookDetailView: View {
     @State var selectedRating = 2
+    @State var isFavourite = false
+    @EnvironmentObject var model: BookModel
     var book: Book
     var body: some View {
       
@@ -31,11 +33,19 @@ struct BookDetailView: View {
                 Text("Mark for later!")
                     .bold()
                     .padding(.vertical, 10  )
-                Image(systemName: "star")
-                    .resizable()
-                    .frame(width:30, height: 30)
-                    .foregroundColor(.yellow)
-                    .padding(.bottom, 30)
+                Button(action: {
+                    self.isFavourite = !isFavourite
+                },label: {
+                    Image(systemName: !isFavourite ?  "star" : "star.fill")
+                        .resizable()
+                        .frame(width:30, height: 30)
+                        .foregroundColor(.yellow)
+                        .padding(.bottom, 30)
+                        .onChange(of: isFavourite, perform:{value in model.updateIsFavourite(forId: book.id, value: isFavourite)})
+                        .onAppear{
+                            isFavourite = book.isFavourite
+                    }
+                })
                 Text("Rate " + book.title)
                     .bold()
                     .padding(.bottom, 10)

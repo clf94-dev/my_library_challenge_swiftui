@@ -14,16 +14,25 @@ struct BookItemView: View {
             Rectangle()
                .foregroundColor(.white)
             VStack (alignment: .leading){
-                Text(book.title)
-                    .padding(5)
-                    .bold()
+                HStack {
+                    Text(book.title)
+                        .padding(5)
+                        .bold()
                     .font(.system (size: 30))
+                    if book.isFavourite {
+                        Image(systemName:"star.fill")
+                            .resizable()
+                            .frame(width:30, height: 30)
+                            .foregroundColor(.yellow)
+                    }
+                   
+                }
                 Text(book.author)
                     .padding(5)
                     .italic()
                 Image(book.image)
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                
                     .clipped()
                           

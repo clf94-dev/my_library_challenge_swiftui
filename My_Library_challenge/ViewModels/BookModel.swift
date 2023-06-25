@@ -19,4 +19,11 @@ class BookModel : ObservableObject {
                 books[index].currentPage = page
         }
     }
+    func updateIsFavourite(forId: Int, value: Bool) {
+        
+        if let index = books.firstIndex(where: {$0.id == forId}) {
+                books[index].isFavourite = value
+        }
+    }
+
 }
