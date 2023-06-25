@@ -24,17 +24,15 @@ struct LibraryListView: View {
                     LazyVStack {
                         ForEach(0..<model.books.count, id: \.self) { index in
                             // TabView{
-                            
-                            
-                            Button(action: {
+                            NavigationLink(destination: BookDetailView(book: model.books[index]), label:{
+                                    BookItemView(book: model.books[index])
+                                        .cornerRadius(10)
+                                        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.5), radius: 10, x: -3, y:6)
+                                        .foregroundColor(.black)
                                 
-                            }, label: {
-                                BookItemView(book: model.books[index])
-                                
-                            })
-                            .buttonStyle(PlainButtonStyle())
-                            .cornerRadius(10)
-                            .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.5), radius: 10, x: -3, y:6)
+                            }
+                            )
+                           
                         }
                         }.padding(20)
                             
