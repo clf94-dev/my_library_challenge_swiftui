@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BookContentView: View {
     @State var pageSelected = 0
+    @EnvironmentObject var model: BookModel
     var book: Book
     var body: some View {
         VStack{
@@ -23,6 +24,11 @@ struct BookContentView: View {
                     }.padding()
                 }
             }.tabViewStyle(.page)
+                .onChange(of: pageSelected, perform: { value in
+                    model.updatePage(forId: book.id, page: pageSelected)})
+                .onAppear{
+                    pageSelected = book.currentPage
+                }
         }
         
     }
