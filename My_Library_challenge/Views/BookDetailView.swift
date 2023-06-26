@@ -57,6 +57,12 @@ struct BookDetailView: View {
                     Text("5").tag(5)
                 }.pickerStyle(SegmentedPickerStyle())
                     .frame(width: 250)
+                    .onChange(of: selectedRating, perform: { value in
+                        model.updateRating(forId: book.id, value: selectedRating)
+                    })
+                    .onAppear{
+                        selectedRating = book.rating
+                    }
                 
                 
             }

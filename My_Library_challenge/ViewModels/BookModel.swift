@@ -25,5 +25,12 @@ class BookModel : ObservableObject {
                 books[index].isFavourite = value
         }
     }
+    func updateRating(forId: Int, value: Int) {
+        
+        if let index = books.firstIndex(where: {$0.id == forId}) {
+                books[index].rating = value
+        }
+    }
+
 
 }

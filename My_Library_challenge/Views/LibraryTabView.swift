@@ -18,7 +18,7 @@ struct LibraryTabView: View {
                 .tabItem{
                     VStack{
                         Image(systemName:"star")
-                        Text("Featured")
+                        Text("Favourite")
                             .font(Font.custom("Avenir", size: 15))
                     }
                 }
